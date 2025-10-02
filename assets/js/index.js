@@ -31,7 +31,7 @@
     });
 
     $(".git").on("click", function() {
-      window.open("https://github.com/guintokylep", '_blank');
+      window.open("https://github.com/kylepauloguinto", '_blank');
     });
 
     // japanese codes

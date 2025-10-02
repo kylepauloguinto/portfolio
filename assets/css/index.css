@@ -390,6 +390,7 @@ ul li{
   padding-top: 3px;
   padding-bottom: 5px;
   float: right;
+  text-align: center;
 }
 .badge-credentials{
   background-color: rgb(76, 106, 168);
