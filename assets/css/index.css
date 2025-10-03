@@ -189,12 +189,25 @@ img{
   background-color: rgb(36, 58, 105);
   border-radius: 5px;
   width:30%;
+  transition: transform 500ms;
+}
+.div-solid:hover,
+.div-solid-full:hover{
+  transform: translateY(-3px) !important;
 }
 .div-solid-full{
   background-color: rgb(36, 58, 105);
   border-radius: 5px;
   width:100%;
   margin-top: 10px;
+  transition: transform 500ms;
+}
+.div-solid-full-1{
+  background-color: rgb(36, 58, 105);
+  border-radius: 5px;
+  width:100%;
+  margin-top: 10px;
+  transition: transform 500ms;
 }
 .div-solid-full> .font-about{
   margin-bottom: 0%;
@@ -447,7 +460,7 @@ ul li{
 ,.github-jap{
   background-color: rgb(36, 58, 105);
   padding-left: 11px;
-  padding-top: 5px;
+  padding-top: 7px;
   border-radius: 10px;
   position: absolute;
   width: 50px;
