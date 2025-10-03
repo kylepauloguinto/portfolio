@@ -446,11 +446,11 @@ ul li{
 .github
 ,.github-jap{
   background-color: rgb(36, 58, 105);
-  padding-left: 15px;
+  padding-left: 11px;
   padding-top: 5px;
-  padding-bottom: 5px;
   border-radius: 10px;
   position: absolute;
+  width: 50px;
   right:35px;
   cursor: pointer;
   text-align:center;
