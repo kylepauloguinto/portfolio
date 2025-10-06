@@ -1,88 +1,99 @@
-body{
+body {
   background-color: #000000 !important;
+}
+.blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 .circle-container {
   border-radius: 50%; /* Make it a circle */
 }
-.transaction,#mainContainer {
-  position:relative;
-  display:flex;
-  width:100%;
+.transaction,
+#mainContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
   max-width: 1080px;
-  margin-right:auto;
-  margin-left:auto;
+  margin-right: auto;
+  margin-left: auto;
 }
-select,input{
+select,
+input {
   border: 1px solid #97afcf !important;
   color: #213088 !important;
 }
-label, .fs-4 i{
+label,
+.fs-4 i {
   color: #213088 !important;
 }
-.contents{
-  width:100%;
+.contents {
+  width: 100%;
   max-width: 580px;
-  margin-right:auto;
-  margin-left:auto;
+  margin-right: auto;
+  margin-left: auto;
 }
-.link{
+.link {
   color: #213088;
 }
-.link:hover{
+.link:hover {
   color: #176d29;
   text-decoration: underline;
 }
-.navbar{
-  background-color:#dbf3fa !important;
+.navbar {
+  background-color: #dbf3fa !important;
 }
 .modal,
-.navbar-brand{
+.navbar-brand {
   color: #213088 !important;
 }
-.input-group-text{
+.input-group-text {
   color: #213088 !important;
   border: 1px solid #97afcf !important;
   background-color: #cde9f1 !important;
 }
 .dropdown-menu,
-.list-group-item{
+.list-group-item {
   color: #213088 !important;
   border: 1px solid #97afcf !important;
 }
-.nav-pills li .active{
+.nav-pills li .active {
   background-color: #213088 !important;
   color: white !important;
 }
 .dropdown-item,
-.nav-pills li a{
+.nav-pills li a {
   color: #213088 !important;
 }
-.font-color{
+.font-color {
   color: #ffffff !important;
 }
-.font-color-2{
+.font-color-2 {
   color: #ffffff !important;
   font-size: 10px;
 }
-.font-color-3{
+.font-color-3 {
   color: #ffffff !important;
   font-size: 12px;
   position: absolute;
   right: 15px;
 }
-.form-select{
-  width:120px !important;
+.form-select {
+  width: 120px !important;
   color: #ffffff !important;
   background-color: rgb(76, 106, 168) !important;
   justify-self: end;
 }
-.select-stack{
+.select-stack {
   margin-left: auto;
 }
-.modal-header{
+.modal-header {
   border-bottom: none !important;
 }
-.modal-footer{
+.modal-footer {
   border-top: none !important;
 }
 
@@ -103,13 +114,13 @@ label, .fs-4 i{
   background-color: white;
 }*/
 @media screen and (max-width: 3440px) {
-  #logo{
+  #logo {
     position: absolute;
-    top:-80px;
+    top: -80px;
     left: 39%;
     border-radius: 50%;
   }
-  #lang{
+  #lang {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -117,21 +128,21 @@ label, .fs-4 i{
   }
 }
 @media screen and (max-width: 600px) {
-  #logo{
+  #logo {
     position: absolute;
-    top:-80px;
+    top: -80px;
     left: 35%;
     border-radius: 50%;
   }
 }
-img{
+img {
   width: 150px;
 }
-#about{
-  width:100%;
+#about {
+  width: 100%;
   max-width: 680px;
-  margin-right:auto;
-  margin-left:auto;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 200px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -143,12 +154,18 @@ img{
   border: 2px solid #97afcf;
   background-color: rgb(15, 24, 43);
 }
-#experience,#projects,#techstacks,#certificates
-,#experience-jap,#projects-jap,#techstacks-jap,#certificates-jap{
-  width:100%;
+#experience,
+#projects,
+#techstacks,
+#certificates,
+#experience-jap,
+#projects-jap,
+#techstacks-jap,
+#certificates-jap {
+  width: 100%;
   max-width: 680px;
-  margin-right:auto;
-  margin-left:auto;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 5px;
   margin-bottom: 10px;
   padding-top: 20px;
@@ -159,11 +176,11 @@ img{
   border: 2px solid #97afcf;
   background-color: rgb(15, 24, 43);
 }
-#footer{
-  width:100%;
+#footer {
+  width: 100%;
   max-width: 680px;
-  margin-right:auto;
-  margin-left:auto;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 5px;
   margin-bottom: 10px;
   padding-top: 5px;
@@ -174,74 +191,74 @@ img{
   border: 2px solid #97afcf;
   background-color: rgb(15, 24, 43);
 }
-.modal-content{
+.modal-content {
   background-color: rgb(15, 24, 43);
 }
-.nav-item > .active{
+.nav-item > .active {
   background-color: rgb(15, 24, 43) !important;
   border-color: rgb(36, 58, 105) !important;
   border-bottom-color: rgb(15, 24, 43) !important;
 }
-.nav-tabs{
+.nav-tabs {
   border-bottom: 1px solid rgb(36, 58, 105) !important;
 }
-.div-solid{
+.div-solid {
   background-color: rgb(36, 58, 105);
   border-radius: 5px;
-  width:30%;
+  width: 30%;
   transition: transform 500ms;
 }
 .div-solid:hover,
-.div-solid-full:hover{
+.div-solid-full:hover {
   transform: translateY(-3px) !important;
 }
-.div-solid-full{
+.div-solid-full {
   background-color: rgb(36, 58, 105);
   border-radius: 5px;
-  width:100%;
+  width: 100%;
   margin-top: 10px;
   transition: transform 500ms;
 }
-.div-solid-full-1{
+.div-solid-full-1 {
   background-color: rgb(36, 58, 105);
   border-radius: 5px;
-  width:100%;
+  width: 100%;
   margin-top: 10px;
   transition: transform 500ms;
 }
-.div-solid-full> .font-about{
+.div-solid-full > .font-about {
   margin-bottom: 0%;
 }
-.tab-pane{
+.tab-pane {
   border-radius: 5px !important;
 }
-.nav-tabs{
-    margin-top: 20px;
+.nav-tabs {
+  margin-top: 20px;
 }
-.font-about{
+.font-about {
   margin-bottom: 0%;
-  color:grey;
+  color: grey;
   font-size: 12px;
 }
-.java{
+.java {
   background-color: rgb(119, 212, 119);
   padding-right: 20px !important;
   margin-right: 5px !important;
   color: rgb(4, 102, 4);
 }
-.angular{
+.angular {
   background-color: rgb(212, 119, 119);
   padding-right: 20px !important;
   margin-right: 5px !important;
   color: rgb(102, 4, 4);
 }
-.postgresql{
+.postgresql {
   background-color: rgb(119, 209, 212);
   padding-right: 20px !important;
   margin-right: 5px !important;
   color: rgb(4, 87, 102);
 }
-.data-op{
+.data-op {
   background-color: rgb(250, 250, 126);
   padding-right: 20px !important;
   color: rgb(102, 92, 4);
@@ -290,7 +307,7 @@ h4 {
   font-size: 30px;
 }
 .button-container {
-  text-align: center ;
+  text-align: center;
 }
 .page-item,
 .like {
@@ -337,12 +354,12 @@ h4 {
   font-weight: bold;
 }
 
-.cstm-pdng{
+.cstm-pdng {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
 
-.vertical-line{
+.vertical-line {
   display: inline-block;
   border-left: 1px solid #ccc;
   margin: 0 10px;
@@ -352,7 +369,7 @@ h4 {
   margin-left: 100px;
 }
 
-.blank-space{
+.blank-space {
   height: 15px;
 }
 
@@ -367,7 +384,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
 
 }*/
-ul li{
+ul li {
   display: list-item;
   /*padding: 5px 10px;*/
   /*margin: 0 3px;*/
@@ -392,11 +409,11 @@ ul li{
 }
 /*------------------------------------------*/
 
-.badge{
-  top:-8px !important;
+.badge {
+  top: -8px !important;
   right: -8px !important;
 }
-.badge-year{
+.badge-year {
   background-color: rgb(36, 58, 105);
   padding-left: 10px;
   padding-right: 10px;
@@ -405,7 +422,7 @@ ul li{
   float: right;
   text-align: center;
 }
-.badge-credentials{
+.badge-credentials {
   background-color: rgb(76, 106, 168);
   padding-left: 10px;
   padding-right: 10px;
@@ -414,22 +431,22 @@ ul li{
   position: absolute;
   right: 35px;
 }
-.code{
+.code {
   position: absolute;
-  right:35px;
+  right: 35px;
   cursor: pointer;
 }
-.dates{
+.dates {
   position: absolute;
-  right:35px;
+  right: 35px;
   margin-left: 50px;
 }
-.dates-1{
+.dates-1 {
   position: absolute;
-  right:30px;
+  right: 30px;
   margin-left: 20px;
 }
-.stack{
+.stack {
   background-color: rgb(76, 106, 168);
   padding-left: 15px;
   padding-right: 15px;
@@ -440,7 +457,7 @@ ul li{
   margin-right: 15px;
   margin-bottom: 15px;
 }
-.btn-close-modal{
+.btn-close-modal {
   background-color: rgb(76, 106, 168);
   padding-left: 15px;
   padding-right: 15px;
@@ -452,28 +469,28 @@ ul li{
   margin-bottom: 15px;
   color: white;
 }
-.btn-close-modal:hover{
+.btn-close-modal:hover {
   background-color: rgb(179, 195, 228);
   color: white;
 }
-.github
-,.github-jap{
+.github,
+.github-jap {
   background-color: rgb(36, 58, 105);
   padding-left: 11px;
   padding-top: 7px;
   border-radius: 10px;
   position: absolute;
   width: 50px;
-  right:35px;
+  right: 35px;
   cursor: pointer;
-  text-align:center;
+  text-align: center;
 }
-.col-1{
+.col-1 {
   padding-left: 0px !important;
   padding-right: 0px !important;
   padding-bottom: 0px !important;
 }
-.expertise{
+.expertise {
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -496,7 +513,7 @@ ul li{
 }
 /* vertical line */
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 12px;
@@ -506,7 +523,7 @@ ul li{
   background: #c7c7c7;
 }
 .timeline-modal::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 12px;
@@ -520,7 +537,7 @@ ul li{
 }
 /* black circle */
 .timeline-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -21px;
   top: 4px;
@@ -553,21 +570,22 @@ ul li{
   margin: 0px 0 0;
   padding-left: 0px;
 }
-.lang > .active{
+.lang > .active {
   background-color: rgb(15, 24, 43) !important;
   border-color: rgb(36, 58, 105) !important;
   border-bottom-color: none !important;
 }
-.lang > .btn-primary{
+.lang > .btn-primary {
   padding-top: 2px !important;
   padding-bottom: 2px !important;
   background-color: rgb(36, 58, 105);
   border-color: #4c66af;
 }
-.lang > .btn-primary:hover, .focus{
+.lang > .btn-primary:hover,
+.focus {
   background-color: #4c66af !important;
 }
-#lang{
+#lang {
   width: 100px;
   padding-left: 0px;
   padding-right: 0px;
@@ -583,76 +601,78 @@ ul li{
   border-radius: 1ex;
 }
 /* Smooth scrolling for modern browsers */
-    html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
-    /* --- Floating nav container --- */
-    .floating-nav {
-      position: fixed;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 9999;
-      font-family: system-ui, sans-serif;
-    }
+/* --- Floating nav container --- */
+.floating-nav {
+  position: fixed;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  font-family: system-ui, sans-serif;
+}
 
-    .floating-nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+.floating-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .floating-nav li + li {
-      margin-top: 10px;
-    }
+.floating-nav li + li {
+  margin-top: 10px;
+}
 
-    .floating-nav a {
-      position: relative; /* for tooltip positioning */
-      display: inline-block;
-      padding: 10px 14px;
-      border-radius: 50%;
-      aspect-ratio: 1 / 1;
-      background: rgb(15, 24, 43);
-      border: 1px solid #97afcf;
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-      outline: none;
-      text-align: center;
-      margin-top: 10px;
-    }
+.floating-nav a {
+  position: relative; /* for tooltip positioning */
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  background: rgb(15, 24, 43);
+  border: 1px solid #97afcf;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  outline: none;
+  text-align: center;
+  margin-top: 10px;
+}
 
-    /* Tooltip text hidden by default */
-    .floating-nav a span {
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      right: 110%; /* show tooltip to the left of the button */
-      transform: translateY(-50%);
-      background: rgb(15, 24, 43);
-      border: 1px solid #97afcf;
-      color: #fff;
-      padding: 4px 8px;
-      border-radius: 4px;
-      white-space: nowrap;
-      font-size: 13px;
-      transition: opacity 0.3s;
-    }
+/* Tooltip text hidden by default */
+.floating-nav a span {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: 110%; /* show tooltip to the left of the button */
+  transform: translateY(-50%);
+  background: rgb(15, 24, 43);
+  border: 1px solid #97afcf;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 13px;
+  transition: opacity 0.3s;
+}
 
-    /* Tooltip arrow */
-    .floating-nav a span::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      margin-top: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: transparent transparent transparent #213088;
-    }
+/* Tooltip arrow */
+.floating-nav a span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #213088;
+}
 
-    /* Show tooltip on hover */
-    .floating-nav a:hover span {
-      visibility: visible;
-      opacity: 1;
-    }
+/* Show tooltip on hover */
+.floating-nav a:hover span {
+  visibility: visible;
+  opacity: 1;
+}
