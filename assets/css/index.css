@@ -30,7 +30,6 @@ body {
     transform: translateX(-5px) rotate(-5deg);
   }
 }
-
 .circle-container {
   border-radius: 50%; /* Make it a circle */
 }
@@ -176,6 +175,7 @@ img {
   border: 2px solid #97afcf;
   background-color: rgb(15, 24, 43);
 }
+
 #experience,
 #projects,
 #techstacks,
@@ -247,6 +247,23 @@ img {
   width: 100%;
   margin-top: 10px;
   transition: transform 500ms;
+  position: relative; /* Needed for positioning the ::after pseudo-element */
+  display: inline-block; /* Or block, depending on your layout */
+  padding-bottom: 5px; /* Adjust as needed for space below text */
+  cursor: pointer; /* Optional: indicates interactivity */
+}
+.div-solid-full-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Adjust to position the underline */
+  width: 0; /* Initially hidden */
+  height: 4px; /* Thickness of the underline */
+  background-color: rgb(76, 106, 168); /* Color of the underline */
+  transition: width 0.3s ease-out; /* Animation for width change */
+}
+.div-solid-full-1:hover::after {
+  width: 100%; /* Expands to full width on hover */
 }
 .div-solid-full > .font-about {
   margin-bottom: 0%;
@@ -533,9 +550,15 @@ ul li {
   gap: 40px;
   padding-left: 40px;
 }
+@keyframes blinker-1 {
+  50% {
+    opacity: 0.2;
+  }
+}
 /* vertical line */
 .timeline::before {
   content: "";
+  animation: blinker-1 2s linear infinite;
   position: absolute;
   top: 0;
   left: 12px;
@@ -546,6 +569,7 @@ ul li {
 }
 .timeline-modal::before {
   content: "";
+  animation: blinker-1 2s linear infinite;
   position: absolute;
   top: 0;
   left: 12px;
