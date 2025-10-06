@@ -140,7 +140,7 @@ $(document).ready(function () {
 
   // client projects
   let stacksFrom = "0";
-  let stacksTo = "23";
+  let stacksTo = "26";
 
   $({ Counter: stacksFrom }).animate(
     {
