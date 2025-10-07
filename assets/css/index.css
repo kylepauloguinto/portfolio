@@ -15,6 +15,7 @@ body {
 
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
+  cursor: none;
 }
 @keyframes shake {
   0%,
