@@ -462,13 +462,31 @@ ul li {
   text-align: center;
 }
 .badge-credentials {
-  background-color: rgb(76, 106, 168);
+  border: 2px solid rgb(76, 106, 168);
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: absolute;
+  border-radius: 50px;
   right: 35px;
+  top: 50px;
+
+  text-decoration: none;
+  overflow: hidden; /* Ensures the background doesn't overflow */
+  background-image: linear-gradient(
+    to right,
+    rgb(76, 106, 168),
+    rgb(76, 106, 168)
+  );
+  background-repeat: no-repeat;
+  background-position: left center; /* Position the background to the left */
+  background-size: 0% 100%; /* Initially, the background has 0 width */
+  transition: background-size 0.3s ease-in-out; /* Smooth transition for background-size */
+}
+.badge-credentials:hover {
+  background-size: 100% 100%; /* On hover, expand the background to full width */
+  text-decoration: none;
 }
 .code {
   position: absolute;
@@ -721,4 +739,61 @@ html {
 .floating-nav a:hover span {
   visibility: visible;
   opacity: 1;
+}
+
+/* Flip div for handled projects */
+
+/* Container for the 3D perspective */
+.flip-container {
+  perspective: 1000px; /* Gives the 3D effect */
+  width: 200px; /* Example width */
+  height: 113px; /* Example height */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* The flipper element handles the rotation */
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s; /* Smooth transition for the flip */
+  transform-style: preserve-3d; /* Essential for 3D transforms */
+}
+
+/* Front and back of the card share common styles */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back of the element when facing away */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width/height */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Specific styles for the front */
+.front {
+  background-color: rgb(36, 58, 105);
+}
+
+/* Specific styles for the back, initially rotated */
+.back {
+  background-color: rgb(36, 58, 105);
+  color: #fff;
+  transform: rotateY(180deg); /* Start rotated for the back */
+}
+
+/* State when the card is flipped */
+.flip-container.hover .flipper {
+  transform: rotateY(180deg); /* Rotate the flipper to reveal the back */
+}
+
+/* Optional: Add hover effect for desktop */
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
 }

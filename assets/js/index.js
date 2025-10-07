@@ -138,7 +138,27 @@ $(document).ready(function () {
     }
   );
 
-  // client projects
+  // personal projects
+  let personalProjFrom = "0";
+  let personalProjTo = "6";
+
+  $({ Counter: personalProjFrom }).animate(
+    {
+      Counter: personalProjTo,
+    },
+    {
+      duration: 3000,
+      easing: "swing",
+      step: function () {
+        $(".personal-proj").text(Math.ceil(this.Counter));
+      },
+      complete: function () {
+        $(".personal-proj").text(personalProjTo);
+      },
+    }
+  );
+
+  // stacks projects
   let stacksFrom = "0";
   let stacksTo = "26";
 
