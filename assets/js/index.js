@@ -2,7 +2,7 @@ $(document).ready(function () {
   var textToTypeEng =
     "Results-driven Software Engineer with 9 years of experience designing and delivering scalable web and cloud applications. Seeking to leverage deep expertise in full-stack development, system architecture, and team leadership to contribute to innovative projects and mentor junior engineers.";
   var currentIndexEng = 0;
-  var typingSpeedEng = 20; // milliseconds per character
+  var typingSpeedEng = 20; // milliseconds per character.
 
   function typeWriterEng() {
     if (currentIndexEng < textToTypeEng.length) {
@@ -17,7 +17,7 @@ $(document).ready(function () {
   var textToTypeJap =
     "実績重視のソフトウェアエンジニア。9年間の経験を持ち、スケーラブルなWebおよびクラウドアプリケーションの設計・開発・提供に従事。フルスタック開発、システムアーキテクチャ、チームリーダーシップにおける深い専門知識を活かし、革新的なプロジェクトへの貢献と若手エンジニアの育成を目指しています。";
   var currentIndexJap = 0;
-  var typingSpeedJap = 20; // milliseconds per character
+  var typingSpeedJap = 20; // milliseconds per character.
 
   function typeWriterJap() {
     if (currentIndexJap < textToTypeJap.length) {
