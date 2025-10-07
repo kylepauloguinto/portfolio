@@ -745,8 +745,7 @@ html {
 /* Container for the 3D perspective */
 .flip-container {
   perspective: 1000px; /* Gives the 3D effect */
-  width: 200px; /* Example width */
-  height: 113px; /* Example height */
+  width: 30%; /* Example width */
   padding-left: 0px;
   padding-right: 0px;
 }
