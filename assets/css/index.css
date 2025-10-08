@@ -462,6 +462,14 @@ ul li {
   float: right;
   text-align: center;
 }
+.badge-year:hover {
+  box-shadow: 0 0 5px rgb(108, 127, 167);
+  cursor: default;
+}
+.github:hover,
+.github-jap:hover {
+  box-shadow: 0 0 5px rgb(108, 127, 167);
+}
 .badge-credentials {
   border: 2px solid rgb(76, 106, 168);
   padding-left: 10px;

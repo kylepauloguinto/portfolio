@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  const targetElement = document.querySelector(".flip-container");
+
+  setInterval(() => {
+    targetElement.classList.toggle("hover");
+  }, 2000); // Toggle every 2000 milliseconds (2 seconds)
+
   var textToTypeEng =
     "Results-driven Software Engineer with 9 years of experience designing and delivering scalable web and cloud applications. Seeking to leverage deep expertise in full-stack development, system architecture, and team leadership to contribute to innovative projects and mentor junior engineers.";
   var currentIndexEng = 0;
