@@ -936,9 +936,6 @@ html {
   background: #f5c04f;
   border-color: #d6a13d;
 }
-.clear {
-  clear: both;
-}
 .terminal .body {
   background: rgb(19, 30, 54);
   color: #7afb4c;
