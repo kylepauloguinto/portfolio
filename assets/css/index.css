@@ -546,10 +546,10 @@ ul li {
   box-shadow: 0 0 5px rgb(108, 127, 167);
   cursor: default;
 }
-.github:hover,
+/*.github:hover,
 .github-jap:hover {
   box-shadow: 0 0 5px rgb(108, 127, 167);
-}
+}*/
 .badge-credentials {
   border: 2px solid rgb(76, 106, 168);
   padding-left: 10px;
@@ -619,7 +619,7 @@ ul li {
   background-color: rgb(179, 195, 228);
   color: white;
 }
-.github,
+/*.github,
 .github-jap {
   background-color: rgb(36, 58, 105);
   padding-left: 11px;
@@ -630,7 +630,7 @@ ul li {
   right: 35px;
   cursor: pointer;
   text-align: center;
-}
+}*/
 .col-1 {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -781,7 +781,7 @@ html {
 .floating-nav a {
   position: relative; /* for tooltip positioning */
   display: inline-block;
-  padding: 10px 14px;
+  padding: 5px 10px;
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   background: rgb(15, 24, 43);
@@ -1019,3 +1019,57 @@ html {
 .grid-container {
     display: grid;
 }
+.github,
+.github-jap {
+  display: flex;
+  justify-content: flex-end;
+}
+.icon-button {
+    position: relative;
+    display: flex;
+    right: 15px;
+    align-items: center;
+    justify-content: flex-end; /* label expands left */
+    background-color: rgb(36, 58, 105);
+    color: white;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    width: 50px; /* only icon visible initially */
+    transition: width 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+  }
+
+  .icon-button svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  .icon-label {
+    position: absolute;
+    right: 45px; /* start hidden behind icon */
+    opacity: 0;
+    white-space: nowrap;
+    transform: translateX(10px); /* shift right initially */
+    transition: all 0.4s ease;
+    pointer-events: none;
+  }
+
+  .icon-button:hover {
+    width: 115px; /* expand left */
+    background-color: #154794;
+    border-color: #58a6ff;
+    box-shadow: 0 0 5px rgb(108, 127, 167);
+  }
+
+  .icon-button:hover .icon-label {
+    opacity: 1;
+    transform: translateX(0);
+  }
