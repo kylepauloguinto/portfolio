@@ -590,14 +590,18 @@ ul li {
   cursor: pointer;
 }
 .dates {
-  position: absolute;
-  right: 35px;
-  margin-left: 50px;
+  display: flex;
+  justify-content: end;
 }
 .dates-1 {
   position: absolute;
   right: 30px;
   margin-left: 20px;
+}
+.dates-2 {
+  position: absolute;
+  left: -5px;
+  margin-left: 50px;
 }
 .stack {
   background-color: rgb(76, 106, 168);
