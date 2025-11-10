@@ -1,7 +1,7 @@
 {
   "name": "Portfolio",
   "short_name": "Kyle Guinto | Software Engineer",
-  "start_url": "/index.html",
+  "start_url": "/portfolio/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000"
