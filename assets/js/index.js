@@ -12,7 +12,7 @@ $(document).ready(function () {
   }, 2000); // Toggle every 2000 milliseconds (2 seconds)
 
   var textToTypeEng =
-    "Results-driven Software Engineer with 9 years of experience designing and delivering scalable web and cloud applications. Seeking to leverage deep expertise in full-stack development, system architecture, and team leadership to contribute to innovative projects and mentor junior engineers.";
+    "Results-driven Software Engineer with 10 years of experience designing and delivering scalable web and cloud applications. Seeking to leverage deep expertise in full-stack development, system architecture, and team leadership to contribute to innovative projects and mentor junior engineers.";
   var currentIndexEng = 0;
   var typingSpeedEng = 20; // milliseconds per character.
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
   typeWriterEng();
 
   var textToTypeJap =
-    "実績重視のソフトウェアエンジニア。9年間の経験を持ち、スケーラブルなWebおよびクラウドアプリケーションの設計・開発・提供に従事。フルスタック開発、システムアーキテクチャ、チームリーダーシップにおける深い専門知識を活かし、革新的なプロジェクトへの貢献と若手エンジニアの育成を目指しています。";
+    "実績重視のソフトウェアエンジニア。10年間の経験を持ち、スケーラブルなWebおよびクラウドアプリケーションの設計・開発・提供に従事。フルスタック開発、システムアーキテクチャ、チームリーダーシップにおける深い専門知識を活かし、革新的なプロジェクトへの貢献と若手エンジニアの育成を目指しています。";
   var currentIndexJap = 0;
   var typingSpeedJap = 20; // milliseconds per character.
 
@@ -45,11 +45,13 @@ $(document).ready(function () {
   $("#backend").hide();
   $("#database").hide();
   $("#tools").hide();
+  $("#cloud").hide();
   $(".github").hide();
   $("#frontend-jap").hide();
   $("#backend-jap").hide();
   $("#database-jap").hide();
   $("#tools-jap").hide();
+  $("#cloud-jap").hide();
   $(".github-jap").hide();
   $(".jap").hide();
 
@@ -112,7 +114,7 @@ $(document).ready(function () {
 
   // years of Exp counter
   let yearsFrom = "0";
-  let yearsTo = "9";
+  let yearsTo = "10";
 
   $({ Counter: yearsFrom }).animate(
     {
@@ -132,7 +134,7 @@ $(document).ready(function () {
 
   // client projects
   let projectsFrom = "0";
-  let projectsTo = "5";
+  let projectsTo = "6";
 
   $({ Counter: projectsFrom }).animate(
     {
@@ -172,7 +174,7 @@ $(document).ready(function () {
 
   // stacks projects
   let stacksFrom = "0";
-  let stacksTo = "26";
+  let stacksTo = "28";
 
   $({ Counter: stacksFrom }).animate(
     {
