@@ -154,7 +154,7 @@ $(document).ready(function () {
 
   // personal projects
   let personalProjFrom = "0";
-  let personalProjTo = "6";
+  let personalProjTo = "4";
 
   $({ Counter: personalProjFrom }).animate(
     {
@@ -192,3 +192,17 @@ $(document).ready(function () {
     }
   );
 });
+
+function composeEmail() {
+    const to = "guintokyle01@gmail.com";
+    const from = "";
+    const subject = "";
+    const body = "";
+    const gmailUrl =
+        "https://mail.google.com/mail/?view=cm" +
+        "&fs=1" +
+        "&to=" + encodeURIComponent(to) +
+        "&su=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+    window.open(gmailUrl, "_blank");
+}
