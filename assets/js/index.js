@@ -261,7 +261,7 @@ $(document).ready(function () {
 
   // client projects
   let projectsFrom = "0";
-  let projectsTo = "6";
+  let projectsTo = "7";
 
   $({ Counter: projectsFrom }).animate(
     {
